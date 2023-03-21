@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #002b5b;
+  background-color: #e4dccf;
+}
+
+h1 {
+  /* font-weight: 600; */
+}
+
+.buttons-container {
+  text-align: center;
+}
+
+/* Modal buttons */
+
+.show-modal {
+  font-size: 1em;
+  padding: 7px 10px;
+  margin: 2em 1em;
+  transform: rotate(-5deg);
+  box-shadow: 2px 2px #ea5455;
+}
+
+/* Actual Modal Design */
+
+.modal {
+  background-color: #f9f5eb;
+  padding: 3% 10%;
+  border: solid #ea5455 1px;
+  position: relative;
+  margin: auto;
+  max-width: 700px;
+}
+
+/* X button */
+
+.close-modal {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  font-size: 2.3em;
+  border-style: none;
+  color: inherit;
+  background-color: inherit;
+}
+
+.close-modal:hover {
+  color: #ea5455;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .show-modal {
+    font-size: 0.9em;
+  }
+}
